@@ -5,9 +5,6 @@ import org.gradle.api.Project
 
 internal fun Project.configureAndroid(commonExtension: CommonExtension<*, *, *, *, *>) {
     commonExtension.apply {
-        defaultConfig {
-            testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        }
+        defaultConfig { testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner" }
     }
 }
-

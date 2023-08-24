@@ -26,6 +26,7 @@ android {
 }
 
 configureKotlin()
-configureSpotless()
-configureDetekt()
 
+configureSpotless()
+
+configureDetekt()

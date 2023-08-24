@@ -12,12 +12,11 @@ plugins {
 
 android {
     configureAndroid(this)
-    defaultConfig {
-        consumerProguardFiles("consumer-rules.pro")
-    }
+    defaultConfig { consumerProguardFiles("consumer-rules.pro") }
 }
 
 configureKotlin()
-configureSpotless()
-configureDetekt()
 
+configureSpotless()
+
+configureDetekt()
