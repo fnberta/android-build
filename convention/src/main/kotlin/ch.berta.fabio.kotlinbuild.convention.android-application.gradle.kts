@@ -13,6 +13,11 @@ plugins {
 android {
     configureAndroid(this)
     buildTypes {
+        debug {
+            applicationIdSuffix = ".debug"
+            isDebuggable = true
+        }
+
         release {
             isMinifyEnabled = true
             isShrinkResources = true
