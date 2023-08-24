@@ -12,6 +12,7 @@ plugins {
 
 android {
     configureAndroid(this)
+
     defaultConfig { consumerProguardFiles("consumer-rules.pro") }
 }
 

@@ -1,3 +1,4 @@
+import ch.berta.fabio.kotlinbuild.convention.TARGET_SDK
 import ch.berta.fabio.kotlinbuild.convention.configureAndroid
 import ch.berta.fabio.kotlinbuild.convention.configureDetekt
 import ch.berta.fabio.kotlinbuild.convention.configureKotlin
@@ -12,6 +13,9 @@ plugins {
 
 android {
     configureAndroid(this)
+
+    defaultConfig { targetSdk = TARGET_SDK }
+
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
@@ -27,6 +31,7 @@ android {
             )
         }
     }
+
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
 }
 
