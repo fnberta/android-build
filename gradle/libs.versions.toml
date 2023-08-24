@@ -1,0 +1,6 @@
+[libraries]
+android-gradlePlugin = "com.android.tools.build:gradle:8.1.1"
+detekt-gradlePlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.1"
+hilt-gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.47"
+kotlin-gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
+spotless-gradlePlugin = "com.diffplug.spotless:spotless-plugin-gradle:6.20.0"
