@@ -7,6 +7,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Android Build"
+rootProject.name = "Kotlin Build"
 include(":convention")
  

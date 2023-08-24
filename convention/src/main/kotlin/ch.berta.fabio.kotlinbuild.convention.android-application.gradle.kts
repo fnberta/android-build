@@ -1,7 +1,7 @@
-import ch.berta.fabio.androidbuild.convention.configureAndroid
-import ch.berta.fabio.androidbuild.convention.configureDetekt
-import ch.berta.fabio.androidbuild.convention.configureKotlin
-import ch.berta.fabio.androidbuild.convention.configureSpotless
+import ch.berta.fabio.kotlinbuild.convention.configureAndroid
+import ch.berta.fabio.kotlinbuild.convention.configureDetekt
+import ch.berta.fabio.kotlinbuild.convention.configureKotlin
+import ch.berta.fabio.kotlinbuild.convention.configureSpotless
 
 plugins {
     kotlin("android")

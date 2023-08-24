@@ -1,4 +1,4 @@
-package ch.berta.fabio.androidbuild.convention
+package ch.berta.fabio.kotlinbuild.convention
 
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

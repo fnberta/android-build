@@ -1,4 +1,4 @@
-package ch.berta.fabio.androidbuild.convention
+package ch.berta.fabio.kotlinbuild.convention
 
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension
 import org.gradle.api.Project

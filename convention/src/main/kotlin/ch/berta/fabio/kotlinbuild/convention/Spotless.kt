@@ -1,4 +1,4 @@
-package ch.berta.fabio.androidbuild.convention
+package ch.berta.fabio.kotlinbuild.convention
 
 import com.diffplug.gradle.spotless.SpotlessExtension
 import org.gradle.api.Project

@@ -2,19 +2,27 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     `kotlin-dsl`
-    id("maven-publish")
+    `maven-publish`
     alias(libs.plugins.spotless)
 }
 
-group = "com.github.fnberta.androidbuild"
+group = "ch.berta.fabio.kotlinbuild.convention"
 
 version = "0.0.1"
 
 publishing {
+    publications {
+        create<MavenPublication>("kotlinBuild") {
+            artifactId = "kotlin-convention"
+
+            from(components["java"])
+        }
+    }
+
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/fnberta/android-build")
+            url = uri("https://maven.pkg.github.com/fnberta/kotlin-build")
             credentials {
                 username =
                     providers
