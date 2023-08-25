@@ -6,32 +6,18 @@ plugins {
     alias(libs.plugins.spotless)
 }
 
-group = "ch.berta.fabio.kotlinbuild.convention"
+group = "com.github.fnberta.kotlinbuild"
 
 version = "0.0.1"
 
 publishing {
-    publications {
-        create<MavenPublication>("kotlinBuild") {
-            artifactId = "kotlin-convention"
-
-            from(components["java"])
-        }
-    }
-
     repositories {
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/fnberta/kotlin-build")
             credentials {
-                username =
-                    providers
-                        .environmentVariable("GITHUB_USER")
-                        .getOrElse(providers.gradleProperty("GITHUB_USER").get())
-                password =
-                    providers
-                        .environmentVariable("GITHUB_TOKEN")
-                        .getOrElse(providers.gradleProperty("GITHUB_TOKEN").get())
+                username = getEnvOrPropertyOrThrow("GITHUB_USER")
+                password = getEnvOrPropertyOrThrow("GITHUB_TOKEN")
             }
         }
     }
@@ -56,4 +42,9 @@ dependencies {
     implementation(libs.spotless.gradlePlugin)
     implementation(libs.detekt.gradlePlugin)
     implementation(libs.hilt.gradlePlugin)
+    implementation(libs.depVersions.gradlePlugin)
+    implementation(libs.catalog.update.gradlePlugin)
 }
+
+fun Project.getEnvOrPropertyOrThrow(key: String): String =
+    providers.environmentVariable(key).getOrElse(providers.gradleProperty(key).get())

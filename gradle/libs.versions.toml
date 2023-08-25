@@ -7,6 +7,8 @@ detekt-gradlePlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.1"
 hilt-gradlePlugin = "com.google.dagger:hilt-android-gradle-plugin:2.47"
 kotlin-gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"
 spotless-gradlePlugin = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
+depVersions-gradlePlugin = "com.github.ben-manes:gradle-versions-plugin:0.47.0"
+catalog-update-gradlePlugin = "nl.littlerobots.vcu:plugin:0.8.1"
 
 [plugins]
 catalog-update = "nl.littlerobots.version-catalog-update:0.8.1"
