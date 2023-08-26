@@ -1,7 +1,7 @@
-import com.github.fnberta.kotlinbuild.convention.configureAndroid
-import com.github.fnberta.kotlinbuild.convention.configureDetekt
-import com.github.fnberta.kotlinbuild.convention.configureKotlin
-import com.github.fnberta.kotlinbuild.convention.configureSpotless
+import com.github.fnberta.kotlinbuild.configureAndroid
+import com.github.fnberta.kotlinbuild.configureDetekt
+import com.github.fnberta.kotlinbuild.configureKotlin
+import com.github.fnberta.kotlinbuild.configureSpotless
 
 plugins {
     kotlin("android")

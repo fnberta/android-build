@@ -9,5 +9,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Kotlin Build"
-include(":convention")
+include(":kotlin-convention")
  

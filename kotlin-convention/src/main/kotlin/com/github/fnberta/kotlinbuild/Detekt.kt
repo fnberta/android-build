@@ -1,4 +1,4 @@
-package com.github.fnberta.kotlinbuild.convention
+package com.github.fnberta.kotlinbuild
 
 import io.gitlab.arturbosch.detekt.extensions.DetektExtension
 import org.gradle.api.Project

@@ -1,4 +1,4 @@
-package com.github.fnberta.kotlinbuild.convention
+package com.github.fnberta.kotlinbuild
 
 import com.diffplug.gradle.spotless.SpotlessExtension
 import org.gradle.api.Project
