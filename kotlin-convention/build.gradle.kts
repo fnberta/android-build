@@ -41,7 +41,6 @@ dependencies {
     implementation(libs.kotlin.gradlePlugin)
     implementation(libs.spotless.gradlePlugin)
     implementation(libs.detekt.gradlePlugin)
-    implementation(libs.hilt.gradlePlugin)
     implementation(libs.depVersions.gradlePlugin)
     implementation(libs.catalog.update.gradlePlugin)
 }

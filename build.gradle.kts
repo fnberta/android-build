@@ -7,13 +7,6 @@ plugins {
     alias(libs.plugins.catalog.update)
 }
 
-versionCatalogUpdate {
-    keep {
-        keepUnusedLibraries.set(true)
-        keepUnusedPlugins.set(true)
-    }
-}
-
 tasks {
     dependencyUpdates {
         val immaturityLevels = listOf("rc", "cr", "m", "beta", "alpha", "preview")
