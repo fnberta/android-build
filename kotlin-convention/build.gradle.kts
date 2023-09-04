@@ -23,6 +23,9 @@ publishing {
     }
 }
 
+fun Project.getEnvOrPropertyOrThrow(key: String): String =
+    providers.environmentVariable(key).getOrElse(providers.gradleProperty(key).get())
+
 spotless {
     kotlin {
         target("**/*.kt")
@@ -41,9 +44,6 @@ dependencies {
     implementation(libs.kotlin.gradlePlugin)
     implementation(libs.spotless.gradlePlugin)
     implementation(libs.detekt.gradlePlugin)
-    implementation(libs.depVersions.gradlePlugin)
+    implementation(libs.dependencies.gradlePlugin)
     implementation(libs.catalog.update.gradlePlugin)
 }
-
-fun Project.getEnvOrPropertyOrThrow(key: String): String =
-    providers.environmentVariable(key).getOrElse(providers.gradleProperty(key).get())
