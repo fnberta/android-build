@@ -1,15 +1,17 @@
 [versions]
+catalogUpdate = "0.8.1"
+dependencies = "0.47.0"
 spotless = "6.21.0"
 
 [libraries]
 android-gradlePlugin = "com.android.tools.build:gradle:8.1.1"
-catalog-update-gradlePlugin = "nl.littlerobots.vcu:plugin:0.8.1"
-dependencies-gradlePlugin = "com.github.ben-manes:gradle-versions-plugin:0.47.0"
+catalog-update-gradlePlugin = { module = "nl.littlerobots.vcu:plugin", version.ref = "catalogUpdate" }
+dependencies-gradlePlugin = { module = "com.github.ben-manes:gradle-versions-plugin", version.ref = "dependencies" }
 detekt-gradlePlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:1.23.1"
 kotlin-gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10"
 spotless-gradlePlugin = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
 
 [plugins]
-catalog-update = "nl.littlerobots.version-catalog-update:0.8.1"
+catalog-update = { id = "nl.littlerobots.version-catalog-update", version.ref = "catalogUpdate" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
-updates = "com.github.ben-manes.versions:0.47.0"
+updates = { id = "com.github.ben-manes.versions", version.ref = "dependencies" }
