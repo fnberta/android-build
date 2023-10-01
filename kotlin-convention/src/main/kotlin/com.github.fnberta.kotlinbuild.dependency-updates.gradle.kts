@@ -1,15 +1,10 @@
+@file:Suppress("UnstableApiUsage")
+
 import org.gradle.kotlin.dsl.invoke
 
 plugins {
     id("com.github.ben-manes.versions")
     id("nl.littlerobots.version-catalog-update")
-}
-
-versionCatalogUpdate {
-    keep {
-        keepUnusedLibraries.set(true)
-        keepUnusedPlugins.set(true)
-    }
 }
 
 tasks {
