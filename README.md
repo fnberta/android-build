@@ -1,1 +1,1 @@
-hello world
+This provides a set of gradle convention plugins to configure Android applications.
