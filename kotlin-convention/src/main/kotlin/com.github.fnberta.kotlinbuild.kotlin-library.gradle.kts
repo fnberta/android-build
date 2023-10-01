@@ -1,4 +1,4 @@
-import com.github.fnberta.kotlinbuild.configureKotlin
+import com.github.fnberta.kotlinbuild.configureJvmKotlin
 
 plugins {
     kotlin("jvm")
@@ -6,4 +6,4 @@ plugins {
     id("com.github.fnberta.kotlinbuild.detekt")
 }
 
-configureKotlin()
+configureJvmKotlin()

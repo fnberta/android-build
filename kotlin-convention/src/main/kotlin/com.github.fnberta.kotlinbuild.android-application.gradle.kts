@@ -1,6 +1,6 @@
 import com.github.fnberta.kotlinbuild.TARGET_SDK
 import com.github.fnberta.kotlinbuild.configureAndroid
-import com.github.fnberta.kotlinbuild.configureKotlin
+import com.github.fnberta.kotlinbuild.configureAndroidKotlin
 
 plugins {
     kotlin("android")
@@ -11,7 +11,6 @@ plugins {
 
 android {
     configureAndroid(this)
-
     defaultConfig { targetSdk = TARGET_SDK }
 
     buildTypes {
@@ -30,7 +29,6 @@ android {
         }
     }
 
+    configureAndroidKotlin()
     packaging { resources { excludes += "/META-INF/{AL2.0,LGPL2.1}" } }
 }
-
-configureKotlin()

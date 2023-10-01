@@ -1,5 +1,5 @@
 import com.github.fnberta.kotlinbuild.configureAndroid
-import com.github.fnberta.kotlinbuild.configureKotlin
+import com.github.fnberta.kotlinbuild.configureAndroidKotlin
 
 plugins {
     kotlin("android")
@@ -10,8 +10,6 @@ plugins {
 
 android {
     configureAndroid(this)
-
     defaultConfig { consumerProguardFiles("consumer-rules.pro") }
+    configureAndroidKotlin()
 }
-
-configureKotlin()
